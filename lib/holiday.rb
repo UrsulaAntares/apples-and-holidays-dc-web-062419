@@ -84,7 +84,8 @@ def all_holidays_with_bbq(holiday_hash)
       good_times = []
       if supplies.include?("BBQ") 
         good_times << holiday
-        good_times
+      end
+      good_times
     end
   end
 end
