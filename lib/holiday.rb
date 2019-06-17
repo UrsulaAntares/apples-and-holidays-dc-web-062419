@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
     data.each do |holiday, supplies|
       holiday = holiday.to_s
       holiday = holiday.capitalize
-      puts "  #{holiday}: #{supplies.join(", ")}" 
+      puts "  #{holiday.gsub("_", " ")}: #{supplies.join(", ")}" 
     end
   end
 end
